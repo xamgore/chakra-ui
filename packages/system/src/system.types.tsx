@@ -99,7 +99,7 @@ export type ComponentWithAs<Component extends As, Props extends object = {}> = {
   propTypes?: React.WeakValidationMap<any>
   contextTypes?: React.ValidationMap<any>
   defaultProps?: Partial<any>
-  id?: string
+  id?: string | number
 }
 
 export interface ChakraComponent<T extends As, P = {}>
