@@ -1,5 +1,24 @@
 # Change Log
 
+## 1.4.0
+
+### Minor Changes
+
+- [`f2544fb58`](https://github.com/chakra-ui/chakra-ui/commit/f2544fb581a6dbe558236ebb11883a273ed61a28)
+  [#3839](https://github.com/chakra-ui/chakra-ui/pull/3839) Thanks
+  [@with-heart](https://github.com/with-heart)! - This change restores the
+  behavior of the `isLazy` prop (which was broken by `@chakra-ui/tabs@1.3.2`)
+  and adds a new `unmountHiddenPanels` prop which configures the behavior of
+  `isLazy`.
+
+  If you'd like for your tab panel components to be unmounted when a different
+  tab is selected, please continue to use `isLazy`. This is the default
+  behavior.
+
+  If you'd like for your tab panel components to remain mounted (but hidden)
+  after when a different tab is selected, use `unmountHiddenPanels={false}` in
+  combination with `isLazy`.
+
 ## 1.3.2
 
 ### Patch Changes
